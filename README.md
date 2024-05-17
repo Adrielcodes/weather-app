@@ -29,7 +29,7 @@ Clone the repository:
 
 bash
 
-git clone https://github.com/Adrielcodes/streamlit-weather-app.git
+git clone https://github.com/Adrielcodes/weather-app.git
 
 Navigate to the project directory:
 

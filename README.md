@@ -35,15 +35,11 @@ Navigate to the project directory:
 
 bash
 
-cd streamlit-weather-app
-
-Set your WeatherAPI.com API key in the app.py file:
-
-python
+cd weather-app
 
 API_KEY = '3aa549f4d6f3491ab43202903230212'
 
-Run the Streamlit app:
+Run the app:
 
 bash
 

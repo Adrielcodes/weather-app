@@ -1,6 +1,6 @@
-# Streamlit Weather App
+# Weather Explorer App
 
-This Streamlit Weather App is a simple web application that fetches current weather data for a given city using the WeatherAPI.com API and displays it interactively. Users can input a city name, select a date and time, choose a temperature unit, and view various weather parameters such as humidity, wind speed, and location on maps.
+This Weather Explorer App is a simple web application that fetches current weather data for a given city using the WeatherAPI.com API and displays it interactively. Users can input a city name, select a date and time, choose a temperature unit, and view various weather parameters such as humidity, wind speed, and location on maps.
 
 ## Features
 

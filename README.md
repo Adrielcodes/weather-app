@@ -2,6 +2,8 @@
 
 A Streamlit dashboard for current conditions and a 3-day forecast in any city in the world, powered by the [WeatherAPI.com](https://www.weatherapi.com/) API.
 
+**▶ Live demo: https://adriel-weather.streamlit.app**
+
 > One of my early Python projects from college, rebuilt in 2026. The original fetched current conditions only and had a few placeholder widgets. This version adds a real forecast, working unit switching, caching, error handling, and tests.
 
 ## Features
@@ -68,4 +70,4 @@ tests/        pytest suite + recorded API fixture
 
 ## Deploying
 
-Deploys to [Streamlit Community Cloud](https://streamlit.io/cloud) for free. Point it at `app.py` and add `WEATHER_API_KEY` under **App settings → Secrets**.
+The live version runs on [Streamlit Community Cloud](https://streamlit.io/cloud) and redeploys automatically on every push to `main`. To deploy your own copy, point it at `app.py` and add `WEATHER_API_KEY` under **App settings → Secrets**.

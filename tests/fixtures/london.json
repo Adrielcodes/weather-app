@@ -1,0 +1,1122 @@
+{
+ "location": {
+  "name": "London",
+  "region": "City of London, Greater London",
+  "country": "United Kingdom",
+  "lat": 51.5171,
+  "lon": -0.1062,
+  "localtime": "2026-09-28 04:05",
+  "tz_id": "Europe/London"
+ },
+ "current": {
+  "temp_c": 15.2,
+  "temp_f": 59.3,
+  "feelslike_c": 14.4,
+  "feelslike_f": 57.9,
+  "condition": {
+   "text": "Overcast",
+   "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+   "code": 1009
+  },
+  "wind_kph": 6.5,
+  "wind_mph": 4.0,
+  "wind_dir": "NW",
+  "humidity": 78,
+  "uv": 0.0,
+  "pressure_mb": 1018.0,
+  "vis_km": 10.0,
+  "precip_mm": 0.0,
+  "is_day": 0,
+  "last_updated": "2026-09-28 04:00"
+ },
+ "forecast": {
+  "forecastday": [
+   {
+    "date": "2026-09-28",
+    "day": {
+     "maxtemp_c": 19.4,
+     "maxtemp_f": 66.9,
+     "mintemp_c": 14.3,
+     "mintemp_f": 57.8,
+     "daily_chance_of_rain": 20,
+     "totalprecip_mm": 0.03,
+     "condition": {
+      "text": "Overcast",
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+      "code": 1009
+     },
+     "maxwind_kph": 13.3,
+     "maxwind_mph": 8.3,
+     "avghumidity": 69,
+     "uv": 2.0
+    },
+    "astro": {
+     "sunrise": "06:56 AM",
+     "sunset": "06:45 PM"
+    },
+    "hour": [
+     {
+      "time": "2026-09-28 00:00",
+      "temp_c": 16.0,
+      "temp_f": 60.8,
+      "chance_of_rain": 21,
+      "condition": {
+       "text": "Patchy rain nearby",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/176.png",
+       "code": 1063
+      },
+      "wind_kph": 9.7,
+      "wind_mph": 6.0,
+      "humidity": 81
+     },
+     {
+      "time": "2026-09-28 01:00",
+      "temp_c": 15.5,
+      "temp_f": 60.0,
+      "chance_of_rain": 26,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 8.6,
+      "wind_mph": 5.4,
+      "humidity": 84
+     },
+     {
+      "time": "2026-09-28 02:00",
+      "temp_c": 15.1,
+      "temp_f": 59.1,
+      "chance_of_rain": 27,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 6.1,
+      "wind_mph": 3.8,
+      "humidity": 86
+     },
+     {
+      "time": "2026-09-28 03:00",
+      "temp_c": 15.2,
+      "temp_f": 59.3,
+      "chance_of_rain": 25,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 6.8,
+      "wind_mph": 4.3,
+      "humidity": 82
+     },
+     {
+      "time": "2026-09-28 04:00",
+      "temp_c": 15.2,
+      "temp_f": 59.3,
+      "chance_of_rain": 23,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 6.5,
+      "wind_mph": 4.0,
+      "humidity": 78
+     },
+     {
+      "time": "2026-09-28 05:00",
+      "temp_c": 14.9,
+      "temp_f": 58.8,
+      "chance_of_rain": 22,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 5.8,
+      "wind_mph": 3.6,
+      "humidity": 78
+     },
+     {
+      "time": "2026-09-28 06:00",
+      "temp_c": 14.5,
+      "temp_f": 58.0,
+      "chance_of_rain": 22,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 5.8,
+      "wind_mph": 3.6,
+      "humidity": 78
+     },
+     {
+      "time": "2026-09-28 07:00",
+      "temp_c": 14.3,
+      "temp_f": 57.8,
+      "chance_of_rain": 21,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 6.1,
+      "wind_mph": 3.8,
+      "humidity": 75
+     },
+     {
+      "time": "2026-09-28 08:00",
+      "temp_c": 14.4,
+      "temp_f": 57.9,
+      "chance_of_rain": 19,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 6.5,
+      "wind_mph": 4.0,
+      "humidity": 72
+     },
+     {
+      "time": "2026-09-28 09:00",
+      "temp_c": 15.0,
+      "temp_f": 58.9,
+      "chance_of_rain": 17,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 5.4,
+      "wind_mph": 3.4,
+      "humidity": 67
+     },
+     {
+      "time": "2026-09-28 10:00",
+      "temp_c": 15.6,
+      "temp_f": 60.0,
+      "chance_of_rain": 15,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 6.5,
+      "wind_mph": 4.0,
+      "humidity": 63
+     },
+     {
+      "time": "2026-09-28 11:00",
+      "temp_c": 16.6,
+      "temp_f": 61.8,
+      "chance_of_rain": 14,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 6.1,
+      "wind_mph": 3.8,
+      "humidity": 59
+     },
+     {
+      "time": "2026-09-28 12:00",
+      "temp_c": 17.5,
+      "temp_f": 63.4,
+      "chance_of_rain": 13,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 6.5,
+      "wind_mph": 4.0,
+      "humidity": 55
+     },
+     {
+      "time": "2026-09-28 13:00",
+      "temp_c": 18.2,
+      "temp_f": 64.7,
+      "chance_of_rain": 12,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 7.2,
+      "wind_mph": 4.5,
+      "humidity": 51
+     },
+     {
+      "time": "2026-09-28 14:00",
+      "temp_c": 19.1,
+      "temp_f": 66.3,
+      "chance_of_rain": 11,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 6.5,
+      "wind_mph": 4.0,
+      "humidity": 47
+     },
+     {
+      "time": "2026-09-28 15:00",
+      "temp_c": 19.4,
+      "temp_f": 66.9,
+      "chance_of_rain": 11,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 9.0,
+      "wind_mph": 5.6,
+      "humidity": 46
+     },
+     {
+      "time": "2026-09-28 16:00",
+      "temp_c": 18.8,
+      "temp_f": 65.9,
+      "chance_of_rain": 12,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 11.2,
+      "wind_mph": 6.9,
+      "humidity": 50
+     },
+     {
+      "time": "2026-09-28 17:00",
+      "temp_c": 18.0,
+      "temp_f": 64.4,
+      "chance_of_rain": 13,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 13.3,
+      "wind_mph": 8.3,
+      "humidity": 56
+     },
+     {
+      "time": "2026-09-28 18:00",
+      "temp_c": 17.0,
+      "temp_f": 62.6,
+      "chance_of_rain": 15,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 13.3,
+      "wind_mph": 8.3,
+      "humidity": 63
+     },
+     {
+      "time": "2026-09-28 19:00",
+      "temp_c": 16.4,
+      "temp_f": 61.5,
+      "chance_of_rain": 18,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 11.5,
+      "wind_mph": 7.2,
+      "humidity": 70
+     },
+     {
+      "time": "2026-09-28 20:00",
+      "temp_c": 15.8,
+      "temp_f": 60.5,
+      "chance_of_rain": 21,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 11.2,
+      "wind_mph": 6.9,
+      "humidity": 76
+     },
+     {
+      "time": "2026-09-28 21:00",
+      "temp_c": 15.8,
+      "temp_f": 60.4,
+      "chance_of_rain": 21,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 12.2,
+      "wind_mph": 7.6,
+      "humidity": 76
+     },
+     {
+      "time": "2026-09-28 22:00",
+      "temp_c": 15.7,
+      "temp_f": 60.3,
+      "chance_of_rain": 21,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 10.4,
+      "wind_mph": 6.5,
+      "humidity": 76
+     },
+     {
+      "time": "2026-09-28 23:00",
+      "temp_c": 15.6,
+      "temp_f": 60.2,
+      "chance_of_rain": 22,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 10.8,
+      "wind_mph": 6.7,
+      "humidity": 77
+     }
+    ]
+   },
+   {
+    "date": "2026-09-29",
+    "day": {
+     "maxtemp_c": 24.8,
+     "maxtemp_f": 76.7,
+     "mintemp_c": 15.7,
+     "mintemp_f": 60.3,
+     "daily_chance_of_rain": 29,
+     "totalprecip_mm": 0.2,
+     "condition": {
+      "text": "Overcast",
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+      "code": 1009
+     },
+     "maxwind_kph": 19.4,
+     "maxwind_mph": 12.1,
+     "avghumidity": 76,
+     "uv": 2.8
+    },
+    "astro": {
+     "sunrise": "06:58 AM",
+     "sunset": "06:43 PM"
+    },
+    "hour": [
+     {
+      "time": "2026-09-29 00:00",
+      "temp_c": 15.7,
+      "temp_f": 60.3,
+      "chance_of_rain": 21,
+      "condition": {
+       "text": "Cloudy",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/119.png",
+       "code": 1006
+      },
+      "wind_kph": 9.7,
+      "wind_mph": 6.0,
+      "humidity": 81
+     },
+     {
+      "time": "2026-09-29 01:00",
+      "temp_c": 15.8,
+      "temp_f": 60.4,
+      "chance_of_rain": 23,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 10.8,
+      "wind_mph": 6.7,
+      "humidity": 82
+     },
+     {
+      "time": "2026-09-29 02:00",
+      "temp_c": 15.7,
+      "temp_f": 60.3,
+      "chance_of_rain": 24,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 11.2,
+      "wind_mph": 6.9,
+      "humidity": 84
+     },
+     {
+      "time": "2026-09-29 03:00",
+      "temp_c": 15.8,
+      "temp_f": 60.4,
+      "chance_of_rain": 28,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 11.5,
+      "wind_mph": 7.2,
+      "humidity": 86
+     },
+     {
+      "time": "2026-09-29 04:00",
+      "temp_c": 16.1,
+      "temp_f": 60.9,
+      "chance_of_rain": 29,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 11.9,
+      "wind_mph": 7.4,
+      "humidity": 88
+     },
+     {
+      "time": "2026-09-29 05:00",
+      "temp_c": 16.2,
+      "temp_f": 61.1,
+      "chance_of_rain": 32,
+      "condition": {
+       "text": "Patchy rain nearby",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/176.png",
+       "code": 1063
+      },
+      "wind_kph": 12.2,
+      "wind_mph": 7.6,
+      "humidity": 90
+     },
+     {
+      "time": "2026-09-29 06:00",
+      "temp_c": 16.5,
+      "temp_f": 61.7,
+      "chance_of_rain": 30,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 11.9,
+      "wind_mph": 7.4,
+      "humidity": 91
+     },
+     {
+      "time": "2026-09-29 07:00",
+      "temp_c": 16.7,
+      "temp_f": 62.0,
+      "chance_of_rain": 24,
+      "condition": {
+       "text": "Cloudy",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/119.png",
+       "code": 1006
+      },
+      "wind_kph": 12.2,
+      "wind_mph": 7.6,
+      "humidity": 92
+     },
+     {
+      "time": "2026-09-29 08:00",
+      "temp_c": 17.0,
+      "temp_f": 62.6,
+      "chance_of_rain": 24,
+      "condition": {
+       "text": "Patchy rain nearby",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png",
+       "code": 1063
+      },
+      "wind_kph": 12.6,
+      "wind_mph": 7.8,
+      "humidity": 91
+     },
+     {
+      "time": "2026-09-29 09:00",
+      "temp_c": 17.8,
+      "temp_f": 64.0,
+      "chance_of_rain": 18,
+      "condition": {
+       "text": "Partly Cloudy",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/116.png",
+       "code": 1003
+      },
+      "wind_kph": 14.4,
+      "wind_mph": 8.9,
+      "humidity": 86
+     },
+     {
+      "time": "2026-09-29 10:00",
+      "temp_c": 19.1,
+      "temp_f": 66.3,
+      "chance_of_rain": 22,
+      "condition": {
+       "text": "Patchy rain nearby",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png",
+       "code": 1063
+      },
+      "wind_kph": 16.9,
+      "wind_mph": 10.5,
+      "humidity": 79
+     },
+     {
+      "time": "2026-09-29 11:00",
+      "temp_c": 20.3,
+      "temp_f": 68.5,
+      "chance_of_rain": 22,
+      "condition": {
+       "text": "Patchy rain nearby",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png",
+       "code": 1063
+      },
+      "wind_kph": 17.3,
+      "wind_mph": 10.7,
+      "humidity": 74
+     },
+     {
+      "time": "2026-09-29 12:00",
+      "temp_c": 21.9,
+      "temp_f": 71.4,
+      "chance_of_rain": 5,
+      "condition": {
+       "text": "Sunny",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+       "code": 1000
+      },
+      "wind_kph": 18.7,
+      "wind_mph": 11.6,
+      "humidity": 66
+     },
+     {
+      "time": "2026-09-29 13:00",
+      "temp_c": 24.0,
+      "temp_f": 75.2,
+      "chance_of_rain": 8,
+      "condition": {
+       "text": "Cloudy",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/119.png",
+       "code": 1006
+      },
+      "wind_kph": 18.4,
+      "wind_mph": 11.4,
+      "humidity": 55
+     },
+     {
+      "time": "2026-09-29 14:00",
+      "temp_c": 24.8,
+      "temp_f": 76.7,
+      "chance_of_rain": 12,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 19.4,
+      "wind_mph": 12.1,
+      "humidity": 51
+     },
+     {
+      "time": "2026-09-29 15:00",
+      "temp_c": 23.0,
+      "temp_f": 73.4,
+      "chance_of_rain": 14,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 16.6,
+      "wind_mph": 10.3,
+      "humidity": 57
+     },
+     {
+      "time": "2026-09-29 16:00",
+      "temp_c": 22.1,
+      "temp_f": 71.9,
+      "chance_of_rain": 15,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 14.0,
+      "wind_mph": 8.7,
+      "humidity": 62
+     },
+     {
+      "time": "2026-09-29 17:00",
+      "temp_c": 21.6,
+      "temp_f": 70.8,
+      "chance_of_rain": 16,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 10.4,
+      "wind_mph": 6.5,
+      "humidity": 65
+     },
+     {
+      "time": "2026-09-29 18:00",
+      "temp_c": 21.2,
+      "temp_f": 70.1,
+      "chance_of_rain": 17,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 9.7,
+      "wind_mph": 6.0,
+      "humidity": 67
+     },
+     {
+      "time": "2026-09-29 19:00",
+      "temp_c": 20.7,
+      "temp_f": 69.3,
+      "chance_of_rain": 12,
+      "condition": {
+       "text": "Cloudy",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/119.png",
+       "code": 1006
+      },
+      "wind_kph": 10.4,
+      "wind_mph": 6.5,
+      "humidity": 68
+     },
+     {
+      "time": "2026-09-29 20:00",
+      "temp_c": 19.8,
+      "temp_f": 67.6,
+      "chance_of_rain": 13,
+      "condition": {
+       "text": "Cloudy",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/119.png",
+       "code": 1006
+      },
+      "wind_kph": 10.1,
+      "wind_mph": 6.3,
+      "humidity": 73
+     },
+     {
+      "time": "2026-09-29 21:00",
+      "temp_c": 19.2,
+      "temp_f": 66.6,
+      "chance_of_rain": 17,
+      "condition": {
+       "text": "Cloudy",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/119.png",
+       "code": 1006
+      },
+      "wind_kph": 11.2,
+      "wind_mph": 6.9,
+      "humidity": 75
+     },
+     {
+      "time": "2026-09-29 22:00",
+      "temp_c": 19.2,
+      "temp_f": 66.5,
+      "chance_of_rain": 10,
+      "condition": {
+       "text": "Partly Cloudy",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png",
+       "code": 1003
+      },
+      "wind_kph": 14.4,
+      "wind_mph": 8.9,
+      "humidity": 76
+     },
+     {
+      "time": "2026-09-29 23:00",
+      "temp_c": 19.3,
+      "temp_f": 66.7,
+      "chance_of_rain": 13,
+      "condition": {
+       "text": "Partly Cloudy",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png",
+       "code": 1003
+      },
+      "wind_kph": 17.3,
+      "wind_mph": 10.7,
+      "humidity": 77
+     }
+    ]
+   },
+   {
+    "date": "2026-09-30",
+    "day": {
+     "maxtemp_c": 21.0,
+     "maxtemp_f": 69.8,
+     "mintemp_c": 16.1,
+     "mintemp_f": 61.0,
+     "daily_chance_of_rain": 73,
+     "totalprecip_mm": 4.2,
+     "condition": {
+      "text": "Overcast",
+      "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+      "code": 1009
+     },
+     "maxwind_kph": 20.9,
+     "maxwind_mph": 13.0,
+     "avghumidity": 74,
+     "uv": 2.2
+    },
+    "astro": {
+     "sunrise": "06:59 AM",
+     "sunset": "06:41 PM"
+    },
+    "hour": [
+     {
+      "time": "2026-09-30 00:00",
+      "temp_c": 19.1,
+      "temp_f": 66.3,
+      "chance_of_rain": 22,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 16.6,
+      "wind_mph": 10.3,
+      "humidity": 79
+     },
+     {
+      "time": "2026-09-30 01:00",
+      "temp_c": 19.7,
+      "temp_f": 67.5,
+      "chance_of_rain": 21,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 18.0,
+      "wind_mph": 11.2,
+      "humidity": 75
+     },
+     {
+      "time": "2026-09-30 02:00",
+      "temp_c": 20.1,
+      "temp_f": 68.2,
+      "chance_of_rain": 19,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 19.4,
+      "wind_mph": 12.1,
+      "humidity": 73
+     },
+     {
+      "time": "2026-09-30 03:00",
+      "temp_c": 19.8,
+      "temp_f": 67.6,
+      "chance_of_rain": 20,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 18.0,
+      "wind_mph": 11.2,
+      "humidity": 74
+     },
+     {
+      "time": "2026-09-30 04:00",
+      "temp_c": 19.4,
+      "temp_f": 66.9,
+      "chance_of_rain": 22,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png",
+       "code": 1009
+      },
+      "wind_kph": 17.6,
+      "wind_mph": 11.0,
+      "humidity": 77
+     },
+     {
+      "time": "2026-09-30 05:00",
+      "temp_c": 18.8,
+      "temp_f": 65.9,
+      "chance_of_rain": 65,
+      "condition": {
+       "text": "Light rain shower",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/353.png",
+       "code": 1240
+      },
+      "wind_kph": 15.1,
+      "wind_mph": 9.4,
+      "humidity": 83
+     },
+     {
+      "time": "2026-09-30 06:00",
+      "temp_c": 18.3,
+      "temp_f": 65.0,
+      "chance_of_rain": 78,
+      "condition": {
+       "text": "Light rain",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/296.png",
+       "code": 1183
+      },
+      "wind_kph": 15.8,
+      "wind_mph": 9.8,
+      "humidity": 90
+     },
+     {
+      "time": "2026-09-30 07:00",
+      "temp_c": 18.1,
+      "temp_f": 64.5,
+      "chance_of_rain": 70,
+      "condition": {
+       "text": "Light rain shower",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/353.png",
+       "code": 1240
+      },
+      "wind_kph": 18.4,
+      "wind_mph": 11.4,
+      "humidity": 92
+     },
+     {
+      "time": "2026-09-30 08:00",
+      "temp_c": 18.5,
+      "temp_f": 65.2,
+      "chance_of_rain": 32,
+      "condition": {
+       "text": "Patchy rain nearby",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png",
+       "code": 1063
+      },
+      "wind_kph": 19.1,
+      "wind_mph": 11.9,
+      "humidity": 91
+     },
+     {
+      "time": "2026-09-30 09:00",
+      "temp_c": 19.1,
+      "temp_f": 66.4,
+      "chance_of_rain": 35,
+      "condition": {
+       "text": "Patchy rain nearby",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/176.png",
+       "code": 1063
+      },
+      "wind_kph": 19.8,
+      "wind_mph": 12.3,
+      "humidity": 89
+     },
+     {
+      "time": "2026-09-30 10:00",
+      "temp_c": 18.8,
+      "temp_f": 65.9,
+      "chance_of_rain": 48,
+      "condition": {
+       "text": "Light rain shower",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/353.png",
+       "code": 1240
+      },
+      "wind_kph": 19.1,
+      "wind_mph": 11.9,
+      "humidity": 90
+     },
+     {
+      "time": "2026-09-30 11:00",
+      "temp_c": 19.1,
+      "temp_f": 66.4,
+      "chance_of_rain": 55,
+      "condition": {
+       "text": "Light rain shower",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/353.png",
+       "code": 1240
+      },
+      "wind_kph": 20.9,
+      "wind_mph": 13.0,
+      "humidity": 85
+     },
+     {
+      "time": "2026-09-30 12:00",
+      "temp_c": 18.4,
+      "temp_f": 65.1,
+      "chance_of_rain": 40,
+      "condition": {
+       "text": "Light rain shower",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/353.png",
+       "code": 1240
+      },
+      "wind_kph": 17.6,
+      "wind_mph": 11.0,
+      "humidity": 85
+     },
+     {
+      "time": "2026-09-30 13:00",
+      "temp_c": 18.0,
+      "temp_f": 64.3,
+      "chance_of_rain": 25,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 14.0,
+      "wind_mph": 8.7,
+      "humidity": 82
+     },
+     {
+      "time": "2026-09-30 14:00",
+      "temp_c": 18.5,
+      "temp_f": 65.4,
+      "chance_of_rain": 7,
+      "condition": {
+       "text": "Sunny",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/113.png",
+       "code": 1000
+      },
+      "wind_kph": 15.8,
+      "wind_mph": 9.8,
+      "humidity": 74
+     },
+     {
+      "time": "2026-09-30 15:00",
+      "temp_c": 21.0,
+      "temp_f": 69.8,
+      "chance_of_rain": 13,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 19.8,
+      "wind_mph": 12.3,
+      "humidity": 55
+     },
+     {
+      "time": "2026-09-30 16:00",
+      "temp_c": 20.7,
+      "temp_f": 69.2,
+      "chance_of_rain": 12,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 18.4,
+      "wind_mph": 11.4,
+      "humidity": 50
+     },
+     {
+      "time": "2026-09-30 17:00",
+      "temp_c": 20.0,
+      "temp_f": 68.1,
+      "chance_of_rain": 8,
+      "condition": {
+       "text": "Cloudy",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/119.png",
+       "code": 1006
+      },
+      "wind_kph": 19.4,
+      "wind_mph": 12.1,
+      "humidity": 49
+     },
+     {
+      "time": "2026-09-30 18:00",
+      "temp_c": 19.1,
+      "temp_f": 66.3,
+      "chance_of_rain": 13,
+      "condition": {
+       "text": "Overcast",
+       "icon": "//cdn.weatherapi.com/weather/64x64/day/122.png",
+       "code": 1009
+      },
+      "wind_kph": 15.8,
+      "wind_mph": 9.8,
+      "humidity": 54
+     },
+     {
+      "time": "2026-09-30 19:00",
+      "temp_c": 18.4,
+      "temp_f": 65.1,
+      "chance_of_rain": 7,
+      "condition": {
+       "text": "Partly Cloudy",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/116.png",
+       "code": 1003
+      },
+      "wind_kph": 14.8,
+      "wind_mph": 9.2,
+      "humidity": 60
+     },
+     {
+      "time": "2026-09-30 20:00",
+      "temp_c": 17.5,
+      "temp_f": 63.5,
+      "chance_of_rain": 4,
+      "condition": {
+       "text": "Clear",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+       "code": 1000
+      },
+      "wind_kph": 13.0,
+      "wind_mph": 8.1,
+      "humidity": 63
+     },
+     {
+      "time": "2026-09-30 21:00",
+      "temp_c": 17.0,
+      "temp_f": 62.5,
+      "chance_of_rain": 5,
+      "condition": {
+       "text": "Clear",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+       "code": 1000
+      },
+      "wind_kph": 11.9,
+      "wind_mph": 7.4,
+      "humidity": 65
+     },
+     {
+      "time": "2026-09-30 22:00",
+      "temp_c": 16.4,
+      "temp_f": 61.6,
+      "chance_of_rain": 5,
+      "condition": {
+       "text": "Clear",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+       "code": 1000
+      },
+      "wind_kph": 11.2,
+      "wind_mph": 6.9,
+      "humidity": 67
+     },
+     {
+      "time": "2026-09-30 23:00",
+      "temp_c": 16.1,
+      "temp_f": 61.0,
+      "chance_of_rain": 6,
+      "condition": {
+       "text": "Clear",
+       "icon": "//cdn.weatherapi.com/weather/64x64/night/113.png",
+       "code": 1000
+      },
+      "wind_kph": 10.1,
+      "wind_mph": 6.3,
+      "humidity": 69
+     }
+    ]
+   }
+  ]
+ }
+}

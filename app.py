@@ -1,96 +1,108 @@
-import streamlit as st
+"""Weather Explorer — Streamlit UI.
+
+Run with:  streamlit run app.py
+"""
+
+import os
+
 import pandas as pd
-import requests
+import streamlit as st
 
-# Set WeatherAPI.com API key
-API_KEY = '3aa549f4d6f3491ab43202903230212'
+from weather import IMPERIAL, METRIC, WeatherError, current_summary, daily_forecast, fetch_forecast, hourly_frame
 
-# Function to fetch weather data from WeatherAPI.com
-def get_weather_data(city, key):
-    url = f'http://api.weatherapi.com/v1/current.json?key={key}&q={city}'
-    response = requests.get(url)
+st.set_page_config(page_title="Weather Explorer", page_icon="🌤️", layout="wide")
 
-    # Check if the request was successful
-    if response.status_code != 200:
-        st.error(f"Error fetching data. Status code: {response.status_code}")
-        return None
 
-    data = response.json()
-    return data
+def get_api_key() -> str | None:
+    """Read the key from Streamlit secrets or an environment variable. Never hardcode it."""
+    try:
+        if "WEATHER_API_KEY" in st.secrets:
+            return st.secrets["WEATHER_API_KEY"]
+    except FileNotFoundError:
+        pass  # no secrets.toml — fall back to the environment
+    return os.environ.get("WEATHER_API_KEY")
 
-# Streamlit app
-st.sidebar.header("Weather App")
-city = st.sidebar.text_input("Enter City", "London")
 
-# Date and time input
-selected_date = st.sidebar.date_input("Select a Date", pd.to_datetime('today'))
-selected_time = st.sidebar.time_input("Select a Time", pd.to_datetime('12:00 PM'))
+@st.cache_data(ttl=600, show_spinner="Fetching the latest weather…")
+def load_forecast(city: str, api_key: str) -> dict:
+    # Cached for 10 minutes so switching units or re-running doesn't burn API calls
+    return fetch_forecast(city, api_key)
 
-# Combine date and time into a single datetime object
-selected_datetime = pd.to_datetime(str(selected_date) + ' ' + str(selected_time))
-# Fetch weather data
-weather_data = get_weather_data(city, API_KEY)
-# Temperature unit slider
-temperature_unit = st.sidebar.slider("Select Temperature Unit", min_value=0, max_value=1, step=1, format="%d", key="temp_unit")
-unit_label = "Celsius" if temperature_unit == 0 else "Fahrenheit"
 
-# Check if data is fetched successfully
-if weather_data:
-    # Display weather information
-    st.title(f"Weather Forecast for {city}")
+# ---------------------------------------------------------------- sidebar
+with st.sidebar:
+    st.header("🌤️ Weather Explorer")
+    with st.form("search"):
+        city = st.text_input("City", value=st.session_state.get("city", "London"), placeholder="e.g. Orlando, Tokyo, 10001")
+        if st.form_submit_button("Search", use_container_width=True):
+            st.session_state["city"] = city
+    city = st.session_state.get("city", city)
 
-    # Check if 'current' key is present in the response
-    if 'current' in weather_data:
-        # Interactive table with current weather details
-        st.subheader("Current Weather Details")
-        current_weather_df = pd.json_normalize(weather_data['current'])
-        st.table(current_weather_df)
+    unit_choice = st.segmented_control("Units", ["°F", "°C"], default="°F", key="units")
+    units = METRIC if unit_choice == "°C" else IMPERIAL
 
-        # Area chart for humidity
-        st.subheader("Humidity Area Chart")
-        st.area_chart(current_weather_df[['humidity']].rename(columns={'humidity': 'Humidity (%)'}))
+    st.caption("Data from [WeatherAPI.com](https://www.weatherapi.com/). Updates every 10 minutes.")
 
-        # Bar chart for wind speed
-        st.subheader("Wind Speed Bar Chart")
-        selected_color = st.color_picker("Select Color", "#ff5733")
-        st.bar_chart(current_weather_df[['wind_kph']].rename(columns={'wind_kph': 'Wind Speed (kph)'}), color=selected_color)
-        
+api_key = get_api_key()
+if not api_key:
+    st.error("No API key found.")
+    st.info(
+        "Get a free key at [weatherapi.com](https://www.weatherapi.com/signup.aspx), then either set the "
+        "`WEATHER_API_KEY` environment variable or add it to `.streamlit/secrets.toml`:\n\n"
+        '```toml\nWEATHER_API_KEY = "your-key-here"\n```'
+    )
+    st.stop()
 
-        # Map with points marked on it
-        st.subheader("Map with Location")
+try:
+    data = load_forecast(city, api_key)
+except WeatherError as err:
+    st.warning(str(err))
+    st.stop()
 
-        # Extract latitude and longitude from the 'location' key
-        location = weather_data.get('location', {})
-        latitude = location.get('lat', None)
-        longitude = location.get('lon', None)
+location = data["location"]
+now = current_summary(data, units)
 
-        # Check if latitude and longitude are available
-        if latitude is not None and longitude is not None:
-            # Create a DataFrame with latitude and longitude columns
-            location_df = pd.DataFrame({'LAT': [latitude], 'LON': [longitude]})
+# ---------------------------------------------------------------- header
+place = ", ".join(p for p in (location["name"], location["region"], location["country"]) if p)
+st.title(place)
+st.caption(f"Local time: {pd.to_datetime(location['localtime']).strftime('%A, %B %d · %I:%M %p')}")
 
-            # Display the map
-            st.map(location_df)
-        else:
-            st.warning("Latitude and longitude information is not available.")
-    else:
-        st.error("Unexpected response format. Please check the API documentation.")
-else:
-    st.error("Failed to fetch weather data. Please check the API key and try again.")
+hero_icon, hero_text = st.columns([1, 6], vertical_alignment="center")
+hero_icon.image(now["icon"], width=96)
+hero_text.markdown(
+    f"<div style='font-size:3.5rem;font-weight:700;line-height:1'>{now['temp']}{units.temp_symbol}</div>"
+    f"<div style='font-size:1.2rem'>{now['condition']} · H {now['high']}° / L {now['low']}°</div>",
+    unsafe_allow_html=True,
+)
 
-# Text input for weather condition
-weather_condition = st.text_input("Enter Weather Condition", "Clear Sky")
-st.write(f"You entered: {weather_condition}")
+# ---------------------------------------------------------------- current conditions
+st.subheader("Right now")
+c1, c2, c3, c4, c5 = st.columns(5)
+c1.metric("Feels like", f"{now['feels_like']}{units.temp_symbol}")
+c2.metric("Humidity", f"{now['humidity']}%")
+c3.metric("Wind", f"{now['wind']} {units.wind_label}", now["wind_dir"], delta_color="off")
+c4.metric("UV index", now["uv"])
+c5.metric("Chance of rain", f"{now['chance_of_rain']}%")
+st.caption(f"🌅 Sunrise {now['sunrise']} · 🌇 Sunset {now['sunset']}")
 
-# Button widget
-if st.button("Refresh Data"):
-    weather_data = get_weather_data(city, API_KEY)
+# ---------------------------------------------------------------- hourly
+st.subheader("Next 24 hours")
+hourly = hourly_frame(data, units)
+temp_tab, rain_tab = st.tabs(["Temperature", "Chance of rain"])
+with temp_tab:
+    st.line_chart(hourly[[f"Temperature ({units.temp_symbol})"]], color="#ff8a3d")
+with rain_tab:
+    st.bar_chart(hourly[["Chance of rain (%)"]], color="#3d8bff")
 
-# Checkbox widget
-show_details = st.checkbox("Show Additional Details")
+# ---------------------------------------------------------------- daily
+forecast_days = daily_forecast(data, units)
+st.subheader(f"{len(forecast_days)}-day forecast")
+for col, day in zip(st.columns(len(forecast_days)), forecast_days):
+    with col.container(border=True):
+        st.markdown(f"**{day['label']}**  \n{day['date']}")
+        st.image(day["icon"], width=56)
+        st.markdown(f"**{day['high']}°** / {day['low']}°  \n{day['condition']}  \n💧 {day['chance_of_rain']}%")
 
-# Essential feedback and messages boxes
-if show_details:
-    st.success("Data refreshed successfully!")
-else:
-    st.info("Toggle the checkbox to show additional details.")
+# ---------------------------------------------------------------- map
+st.subheader("Map")
+st.map(pd.DataFrame({"lat": [location["lat"]], "lon": [location["lon"]]}), zoom=9)

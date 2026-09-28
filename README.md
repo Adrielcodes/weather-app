@@ -1,54 +1,71 @@
-# Weather Explorer App
+# 🌤️ Weather Explorer
 
-This Weather Explorer App is a simple web application that fetches current weather data for a given city using the WeatherAPI.com API and displays it interactively. Users can input a city name, select a date and time, choose a temperature unit, and view various weather parameters such as humidity, wind speed, and location on maps.
+A Streamlit dashboard for current conditions and a 3-day forecast in any city in the world, powered by the [WeatherAPI.com](https://www.weatherapi.com/) API.
+
+> One of my early Python projects from college, rebuilt in 2026. The original fetched current conditions only and had a few placeholder widgets. This version adds a real forecast, working unit switching, caching, error handling, and tests.
 
 ## Features
 
-- Fetches current weather data from WeatherAPI.com
-- Allows users to input a city name
-- Provides options to select date, time, and temperature unit
-- Displays current weather details including humidity and wind speed
-- Shows interactive visualizations like area chart and bar chart
-- Marks the location on a map
+- **Search any location:** city name, ZIP/postcode, or coordinates
+- **Current conditions at a glance:** temperature, feels-like, today's high/low, humidity, wind, UV index, chance of rain, sunrise and sunset
+- **Next 24 hours:** interactive temperature and rain-chance charts starting from the location's local time
+- **3-day forecast:** a card for each day with icons, highs/lows, and rain chance
+- **°F / °C toggle:** switches every temperature and wind reading (mph ↔ km/h)
+- **Map** of the location
+- **Friendly errors** for unknown cities, bad API keys, and network problems
+- **Cached requests:** results are reused for 10 minutes, so changing settings doesn't use up API calls
 
-## Technologies Used
+## Tech Stack
 
-- Streamlit
-- Python
-- Pandas
-- Requests
-- WeatherAPI.com
+Python · Streamlit · pandas · requests · pytest
 
-## How to Run
+## Getting Started
 
-1. Install the required dependencies:
+**1. Get a free API key** from [weatherapi.com](https://www.weatherapi.com/signup.aspx).
 
-   ```bash
-   pip install streamlit pandas requests
-Clone the repository:
+**2. Install**
 
-bash
-
+```bash
 git clone https://github.com/Adrielcodes/weather-app.git
-
-Navigate to the project directory:
-
-bash
-
 cd weather-app
+python -m venv .venv
+.venv\Scripts\activate          # macOS/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+```
 
-API_KEY = '3aa549f4d6f3491ab43202903230212'
+**3. Add your key.** Either copy `.streamlit/secrets.toml.example` to `.streamlit/secrets.toml` and paste your key in, or set an environment variable:
 
-Run the app:
+```bash
+set WEATHER_API_KEY=your-key-here        # macOS/Linux: export WEATHER_API_KEY=your-key-here
+```
 
-bash
+`secrets.toml` is gitignored, so your key never ends up in the repo.
 
-    streamlit run app.py
+**4. Run**
 
-    Open your web browser and go to http://localhost:8501 to access the application.
+```bash
+streamlit run app.py
+```
 
-Demo
+Then open http://localhost:8501.
 
-Contributing
+## Tests
 
-Contributions are welcome! Feel free to open an issue or submit a pull request.
+```bash
+pip install -r requirements-dev.txt
+pytest
+```
+
+The tests use a recorded API response (`tests/fixtures/london.json`), so they run offline. They cover the data helpers, API error handling, and a headless run of the full Streamlit app via `AppTest`.
+
+## Project Structure
+
+```
+app.py        Streamlit UI (layout, charts, widgets)
+weather.py    API client and data transforms, kept separate from the UI so they're easy to test
+tests/        pytest suite + recorded API fixture
+```
+
+## Deploying
+
+Deploys to [Streamlit Community Cloud](https://streamlit.io/cloud) for free. Point it at `app.py` and add `WEATHER_API_KEY` under **App settings → Secrets**.
